@@ -1,0 +1,139 @@
+
+body{
+    padding-top: 56px;
+    font-family: 'Open Sans', cursive !important;
+    font-size: 26px !important;
+}
+
+#Contacts a {
+    text-decoration: none;
+}
+
+
+#themeToggle {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
+
+.navbar-nav li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+body.light button{
+    background-color: #92b0d2 !important;
+    color: black !important;
+}
+
+
+body.light {
+    background-color: #F9F9F9;
+
+}
+
+/* стилі для світлої теми */
+body.light .progress-bar {
+
+    background-color: #92b0d2;
+    color: #030303;
+    font-size: 20px;
+}
+
+body.light .navbar-nav {
+    background-color: #F9F9F9;
+}
+
+body.light .nav-link{
+    border-radius: 50px;
+    transition: background-color 0.6s, color 0.6s;
+}
+
+body.light .nav-link:hover {
+    color: #457af5;
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px #457af5
+}
+
+body.light .bottom {
+    background-color: #92b0d2;
+}
+
+
+body.dark {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+body.dark button{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+
+body.dark .progress-bar {
+    background-color: #737d86;
+    color: #E0E0E0;
+    font-size: 20px;
+}
+
+body.dark .navbar-nav {
+    color: #E0E0E0;
+    background-color: #121212;
+}
+
+body.dark .nav-link:hover {
+    color: #6ed4f6;
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px #f8f8f8
+}
+
+body.dark .nav-link{
+    color: #ffffff;
+    border-radius: 50px;
+    transition: background-color 0.6s, color 0.6s;
+
+}
+
+body.dark .bottom {
+    background-color: #ffffff !important;
+
+}
+
+
+body.light .custom-toggler {
+    border-color:  #92b0d2 !important;
+    background-color: #92b0d2 !important;
+}
+
+body.dark .custom-toggler {
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    background-color: #fdfdfd !important;
+}
+
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

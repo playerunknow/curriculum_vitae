@@ -1,0 +1,35 @@
+
+.container{
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        max-width: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+
